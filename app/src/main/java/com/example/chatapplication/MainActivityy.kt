@@ -42,7 +42,8 @@ class MainActivityy : AppCompatActivity() {
                 for(postSnapshot in snapshot.children){
 
                     val currentUser = postSnapshot.getValue(user::class.java)
-                    userList.add(currentUser!!)
+                    if(mAuth.currentUser?.uid != currentUser?.uid){
+                    userList.add(currentUser!!)}
 
                 }
 
