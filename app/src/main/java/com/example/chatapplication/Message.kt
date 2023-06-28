@@ -1,3 +1,5 @@
+package com.example.chatapplication
+
 class message {
     var message: String? = null
     var senderId : String? = null

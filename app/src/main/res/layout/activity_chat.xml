@@ -34,6 +34,7 @@
         
         
         <ImageView
+            android:id="@+id/sendButton"
             android:layout_width="50dp"
             android:layout_height="40dp"
             android:layout_weight="20"
